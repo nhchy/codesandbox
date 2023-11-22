@@ -1,0 +1,16 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": ["useradd -r nginx"],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "go run": {
+      "name": "Run",
+      "command": "./main.sh",
+      "runAtStart": true,
+      "restartOn": {
+        "files": ["./main.go"]
+      }
+    }
+  }
+}
